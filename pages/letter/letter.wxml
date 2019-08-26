@@ -1,0 +1,29 @@
+<view class='video-list'>
+  <block wx:for='{{videolist}}' wx:key='id' wx:for-item="item">
+    <view class='video-item' bindtap='videodetail' data-item='{{item}}'>
+      <view class='vip-view'>
+          <image class='video-cover' src='{{base_img_url + item.cover_img}}' mode='aspectFill'></image>
+          <image wx:if='{{item.is_vip == 1}}' class='vip-img' src='../../images/vip_icon.png'></image>
+      </view>
+      <text class='video-title'>{{item.video_title}}</text>
+    </view>
+  </block>
+  <view class='bottom-view' wx:if='{{is_end}}'>
+    <text class='bottom-txt'>没有更多啦</text>
+  </view>
+</view>
+
+<!--从这里开始复制-->
+<view class="model {{isShowModel?'show':'close'}}" catchtouchmove="preventTouchMove">
+  <!--弹窗样式可自定义-->
+  <view class="model-pack">
+    <view class="model-title">{{ModelTitle}}</view>
+    <view class="model-content">{{ModelContent}}</view>
+    <view class="model-button">
+      <view data-modelid="{{ModelId}}" class="model-button-cancel {{isShowConfirm?'close':'show'}}" bindtap="cancel">继续使用</view>
+      <button open-type='share' data-modelid="{{ModelId}}" class="model-button-confirm {{isShowConfirm?'close':'show'}}" bindtap='confirm'>分享好友</button>
+      <view data-modelid="{{ModelId}}" class="confirm {{isShowConfirm?'show':'close'}}" bindtap="confirm">确定</view>
+    </view>
+  </view>
+</view>
+<!--到这里结束-->

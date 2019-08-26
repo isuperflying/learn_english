@@ -1,0 +1,12 @@
+<view class='video-view'>
+  <video id='vowel_video' autoplay controls poster='{{cover}}' 
+    objectFit='fill' class='video-play' src="{{video_url}}"></video>
+</view>
+
+<view class='video-title-view'>
+    <text class='video-title'>{{video_title}}</text>
+</view>
+
+<view class='share-view'>
+  <button class='share-btn' open-type='share'>分享给好友</button>
+</view>

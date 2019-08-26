@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/home5/home5",
+    "pages/wordtype/wordtype",
+    "pages/home2/home2",
+    "pages/home3/home3",
+    "pages/wordread/wordread",
+    "pages/testpay/testpay",
+    "pages/wordread2/wordread2",
+    "pages/ranklist/ranklist",
+    "pages/test2/test2",
+    "pages/about/about",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/letter/letter",
+    "pages/letterdetail/letterdetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#79ceff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "onReachBottomDistance": 50
+  },
+  "plugins": {
+    "WechatSI": {
+      "version": "0.2.3",
+      "provider": "wx069ba97219f66d99"
+    }
+  },
+  "navigateToMiniProgramAppIdList": [
+    "wxb6ef8359de0f5c31"
+  ],
+  "sitemapLocation": "sitemap.json"
+}
