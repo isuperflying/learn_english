@@ -10,6 +10,7 @@ page {
   width: 100%;
   height: 100%;
   position: relative;
+  background-color: #79ceff;
 }
 
 .bg1 {
@@ -179,7 +180,7 @@ button, button::after {
   width: 240rpx;
   height: 70rpx;
   position: absolute;
-  top: 280rpx;
+  top: 220rpx;
   left: 80rpx;
 }
 
@@ -325,7 +326,7 @@ button, button::after {
 .train-view {
   width: 90%;
   height: 200rpx;
-  margin-top: 70%;
+  margin-top: 30%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -335,14 +336,14 @@ button, button::after {
 }
 
 .base-train-wrapper {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 220rpx;
   position: relative;
 }
 
 .base-train-img {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 220rpx;
   color: #ffffff;
   font-size: 40rpx;
   display: flex;
@@ -353,8 +354,17 @@ button, button::after {
 }
 
 .common-img {
-  width: 120rpx;
-  height: 120rpx;
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.huiben-img{
+  width: 160rpx;
+  height: 199rpx;
+}
+
+.home-keep-img{
+  height: 199rpx;
 }
 
 .bee-login-btn {
@@ -367,14 +377,14 @@ button, button::after {
 }
 
 .rank-wrapper {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 220rpx;
   position: relative;
 }
 
 .rank-img {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 220rpx;
   text-align: center;
   color: #ffffff;
   font-size: 40rpx;
@@ -403,17 +413,18 @@ button, button::after {
   justify-content: space-around;
   padding: 12rpx;
   border-radius: 8px;
+  margin-top: 100rpx;
 }
 
 .my-keep-wrapper {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 274rpx;
   position: relative;
 }
 
 .my-keep-img {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 274rpx;
   text-align: center;
   color: #ffffff;
   font-size: 40rpx;
@@ -434,14 +445,14 @@ button, button::after {
 }
 
 .score-wrapper {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 274rpx;
   position: relative;
 }
 
 .score-mail-img {
-  width: 180rpx;
-  height: 180rpx;
+  width: 220rpx;
+  height: 274rpx;
   text-align: center;
   color: #ffffff;
   font-size: 40rpx;
@@ -494,7 +505,7 @@ button, button::after {
 
 .home-type-txt{
   color: #ffffff;
-  font-size: 40rpx;
+  font-size: 45rpx;
   font-weight: bold;
-  margin-top: 10rpx;
+  margin-top: 12rpx;
 }

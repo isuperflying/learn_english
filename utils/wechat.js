@@ -98,7 +98,7 @@ class Wechat {
   static getMyData(params) {
     params.keyindex = 1;
     console.log('ppp--->'+JSON.stringify(params))
-    let url = baseUrl + 'c';
+    let url = baseUrl + 'cryptdata';
     return this.request(url, params, "POST", "application/x-www-form-urlencoded");
   };
 

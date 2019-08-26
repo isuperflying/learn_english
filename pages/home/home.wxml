@@ -1,7 +1,7 @@
 <!--pages/home1/home1.wxml-->
 <view class='content-wrapper'>
-  <image src='../../images/bg1.png' class='bg1'></image>
-  <image src='../../images/bg2.png' class='bg2'></image>
+  <!-- <image src='../../images/bg1.png' class='bg1'></image>
+  <image src='../../images/bg2.png' class='bg2'></image> -->
   <view class='content-view'>
     <view class='user-info-view' wx:if="{{true}}">
       
@@ -26,7 +26,7 @@
       <view class='base-train-wrapper'>
         <view class='base-train-img' bindtap='basetrain'>
           <image src='../../images/b1.png' class='common-img'></image>
-          <text class='home-type-txt'>基础训练</text>
+          <text class='home-type-txt'>单词卡片</text>
         </view>
         <!-- <image class='base-train-img' src='../../images/base_train.png' bindtap='basetrain'></image> -->
         <button class='bee-login-btn' wx:if='{{!is_login}}' bindgetuserinfo='userLogin' open-type='getUserInfo'></button>
@@ -35,7 +35,7 @@
         <!-- <image class='rank-img' src='../../images/rank_icon.png' bindtap='rank'></image> -->
         <view class='rank-img' bindtap='rank'>
           <image src='../../images/b2.png' class='common-img'></image>
-          <text class='home-type-txt'>英语字母</text>
+          <text class='home-type-txt'>字母学习</text>
         </view>
         <button class='rank-login-btn' wx:if='{{!is_login}}' bindgetuserinfo='rank' open-type='getUserInfo'></button>
       </view>
@@ -44,7 +44,7 @@
       <view class='my-keep-wrapper'>
         <!-- <image class='my-keep-img' src='../../images/my_keep_icon.png'></image> -->
         <view class='my-keep-img' bindtap='collect'>
-          <image src='../../images/b3.png' class='common-img'></image>
+          <image src='../../images/b3.png' class='home-keep-img' mode="aspectFit"></image>
           <text class='home-type-txt'>我的收藏</text>
         </view>
         <button class='keep-login-btn' style='bottom:40%' wx:if='{{!is_login}}' bindgetuserinfo='collect' open-type='getUserInfo'></button>
@@ -52,8 +52,8 @@
       <!-- <image class='score-mail-img' src='../../images/score_mail.png'></image> -->
       <view class='score-wrapper'>
         <view class='score-mail-img' bindtap='newApp'>
-          <image src='../../images/b4.png' class='common-img'></image>
-          <text class='home-type-txt'>音标学习</text>
+          <image src='../../images/huiben.png' class='huiben-img'></image>
+          <text class='home-type-txt'>绘本启蒙</text>
         </view>
         <navigator class="score-nav-view" wx:if='{{isUse}}' target="miniProgram" open-type="navigate" app-id="{{new_app_id}}" ></navigator>
       </view>

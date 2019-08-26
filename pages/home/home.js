@@ -27,7 +27,7 @@ Page({
     today_is_sign: false,
     is_nav: true,
     isUse: true,
-    new_app_id: 'wxb6ef8359de0f5c31'
+    new_app_id: 'wx782c34974a1f6751'
   },
 
   /**
